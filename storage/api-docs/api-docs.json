@@ -1,0 +1,253 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "My Rest Api",
+        "description": "Laravel project to practice developing Rest API with L5 Swagger OpenApi",
+        "contact": {
+            "name": "Steven Wijaya",
+            "email": "steven.422023002@civitas.ukrida.ac.id"
+        },
+        "version": "1.0",
+        "x-logo": {
+            "url": "https://miro.medium.com/v2/resize:fit:1200/1*j3g3akaMpUOLegw0qthA.png"
+        }
+    },
+    "paths": {
+        "/api/books": {
+            "get": {
+                "tags": [
+                    "book"
+                ],
+                "summary": "Display a listing of items",
+                "operationId": "index",
+                "responses": {
+                    "200": {
+                        "description": "successful",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "book"
+                ],
+                "summary": "Store a newly created item",
+                "operationId": "store",
+                "requestBody": {
+                    "description": "Request body description",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Book"
+                            },
+                            "example": {
+                                "title": " 101 Binaraga Natural-Binaraga Sehat Tanpa Obat-Ade Rai",
+                                "author": "Ade Rai",
+                                "publisher": "libri",
+                                "publication_year": "2011",
+                                "cover": "https://images.tokopedia.net/img/cache/500-square/product-1/2020/3/5/95947739/95947739_331a40de-abc2-4416-9234-78ea8dea5b22_688_688.jpg",
+                                "description": "101 Strategi Binaraga Sehat Tanpa Obat.",
+                                "price": 62500
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "400": {
+                        "description": "Invalid input",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "201": {
+                        "description": "Successful",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/books/{id}": {
+            "get": {
+                "tags": [
+                    "book"
+                ],
+                "summary": "Display the specified item",
+                "operationId": "show",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of item that needs to be displayed",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "404": {
+                        "description": "Item not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid input",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "200": {
+                        "description": "Successful",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "book"
+                ],
+                "summary": "Update the specified item",
+                "operationId": "update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of item that needs to be updated",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "description": "Request body description",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Book"
+                            },
+                            "example": {
+                                "title": " 101 Binaraga Natural-Binaraga Sehat Tanpa Obat-Ade Rai",
+                                "author": "Ade Rai",
+                                "publisher": "libri",
+                                "publication_year": "2011",
+                                "cover": "https://images.tokopedia.net/img/cache/500-square/product-1/2020/3/5/95947739/95947739_331a40de-abc2-4416-9234-78ea8dea5b22_688_688.jpg",
+                                "description": "101 Strategi Binaraga Sehat Tanpa Obat.",
+                                "price": 62500
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "404": {
+                        "description": "Item not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid input",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "200": {
+                        "description": "Successful",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "book"
+                ],
+                "summary": "Remove the specified item",
+                "operationId": "destroy",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of item that needs to be removed",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "404": {
+                        "description": "Item not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid input",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "200": {
+                        "description": "Successful",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Book": {
+                "title": "Book model",
+                "description": "Book model",
+                "required": [
+                    "title",
+                    "author"
+                ],
+                "xml": {
+                    "name": "Book"
+                }
+            }
+        }
+    }
+}
