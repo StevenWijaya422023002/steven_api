@@ -19,7 +19,7 @@ class BookController extends Controller
 {
     /**
      * @OA\Get(
-     *      path="/api/books",
+     *      path="/api/book",
      *      tags={"book"},
      *      summary="Display a listing of items",
      *      operationId="index",
@@ -37,7 +37,7 @@ class BookController extends Controller
 
     /**
      * @OA\Post(
-     *      path="/api/books",
+     *      path="/api/book",
      *      tags={"book"},
      *      summary="Store a newly created item",
      *      operationId="store",
@@ -63,12 +63,16 @@ class BookController extends Controller
      *                  "publication_year": "2011",
      *                  "cover": "https://images.tokopedia.net/img/cache/500-square/product-1/2020/3/5/95947739/95947739_331a40de-abc2-4416-9234-78ea8dea5b22_688_688.jpg",
      *                  "description": "101 Strategi Binaraga Sehat Tanpa Obat.",
-     *                  "price": 62500
-     *              }
-     *          )
-     *      )
+     *                  "price": 62500}
+     *          ),
+     *      ),
+     *      security={{"passport_token_ready":{},"passport":{}}}
      * )
      */
+    
+   
+
+
     public function store(Request $request)
     {
         try {
@@ -92,7 +96,7 @@ class BookController extends Controller
 
     /**
      * @OA\Get(
-     *      path="/api/books/{id}",
+     *      path="/api/book/{id}",
      *      tags={"book"},
      *      summary="Display the specified item",
      *      operationId="show",
@@ -134,7 +138,7 @@ class BookController extends Controller
 
     /**
      * @OA\Put(
-     *      path="/api/books/{id}",
+     *      path="/api/book/{id}",
      *      tags={"book"},
      *      summary="Update the specified item",
      *      operationId="update",
@@ -175,10 +179,10 @@ class BookController extends Controller
      *                  "publication_year": "2011",
      *                  "cover": "https://images.tokopedia.net/img/cache/500-square/product-1/2020/3/5/95947739/95947739_331a40de-abc2-4416-9234-78ea8dea5b22_688_688.jpg",
      *                  "description": "101 Strategi Binaraga Sehat Tanpa Obat.",
-     *                  "price": 62500
-     *              }
-     *          )
-     *      )
+     *                  "price": 62500}
+     *          ),
+     *      ),
+     *      security={{"passport_token_ready":{},"passport":{}}}
      * )
      */
     public function update(Request $request, $id)
@@ -208,7 +212,7 @@ class BookController extends Controller
 
     /**
      * @OA\Delete(
-     *      path="/api/books/{id}",
+     *      path="/api/book/{id}",
      *      tags={"book"},
      *      summary="Remove the specified item",
      *      operationId="destroy",
@@ -236,7 +240,8 @@ class BookController extends Controller
      *              type="integer",
      *              format="int64"
      *          )
-     *      )
+     *      ),
+     *      security={{"passport_token_ready":{},"passport":{}}}
      * )
      */
     public function destroy($id)
@@ -254,4 +259,8 @@ class BookController extends Controller
             throw new HttpException(400, "Invalid data: {$exception->getMessage()}");
         }
     }
+
+
+
+
 }
