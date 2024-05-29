@@ -73,26 +73,22 @@ class BookController extends Controller
    
 
 
-    public function store(Request $request)
-    {
-        try {
-            $validator = Validator::make($request->all(), [
-                'title' => 'required|unique:books',
-                'author' => 'required|max:100',
-            ]);
-
-            if ($validator->fails()) {
-                throw new HttpException(400, $validator->messages()->first());
-            }
-
-            $book = new Book;
-            $book->fill($request->all())->save();
-            return $book;
-
-        } catch (\Exception $exception) {
-            throw new HttpException(400, "Invalid data: {$exception->getMessage()}");
-        }
-    }
+     public function store(Request $request)
+     {
+         try {
+             $validatedData = $request->validate([
+                 'title' => 'required|unique:books',
+                 'author' => 'required',
+                 
+             ]);
+     
+             $book = Book::create($validatedData);
+     
+             return response()->json(['message' => 'Book created successfully', 'data' => $book], 201);
+         } catch (ValidationException $e) {
+             return response()->json(['message' => 'Invalid data', 'errors' => $e->errors()], 422);
+         }
+     }
 
     /**
      * @OA\Get(

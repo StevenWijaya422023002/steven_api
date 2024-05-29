@@ -202,28 +202,23 @@ return [
                 'passport_token_ready' => [
                     'type'           => 'http',
                     'scheme'         => 'bearer',
-                    'description'    => 'Enter token in format without "Bearer"',
+                    'description'    => 'Enter token in format without "Bearer "',
                     'name'           => 'Authorization',
                     'in'             => 'header',
                 ],
                 'passport' => [
                     'type'          => 'oauth2',
                     'description'   => 'Laravel passport oauth2 security.',
+                    'in' => 'header',
                     'scheme'        => 'https',
                     'flows' => [
-                        'password' => [
+                        "password" => [
                             'authorizationUrl' => config('app.url') . '/oauth/authorize',
                             'tokenUrl'         => config('app.url') . '/oauth/token',
                             'refreshUrl'       => config('app.url') . '/token/refresh',
                             'scopes'           => []
                         ],
                     ],
-                ],
-                'sanctum' => [
-                    'type'          => 'apiKey',
-                    'description'   => 'Enter token in format (Bearer <token>)',
-                    'name'          => 'Authorization',
-                    'in'            => 'header',
                 ],
                 
             ],
