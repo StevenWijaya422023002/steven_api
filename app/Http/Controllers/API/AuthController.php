@@ -123,30 +123,30 @@ class AuthController extends Controller
 
     /**
      * @OA\Post(
-     *      path="/api/user/logout",
-     *      tags={"user"},
-     *      summary="Log out & destroy self token",
-     *      operationId="logout",
-     *      @OA\Response(
-     *          response=400,
-     *          description="Invalid input",
-     *          @OA\JsonContent()
-     *      ),
-     *      @OA\Response(
-     *          response=200,
-     *          description="Successful",
-     *          @OA\JsonContent()
-     *      ),
-     *      @OA\Parameter(
-     *          name="email",
-     *          in="path",
-     *          description="User Email",
-     *          required=true,
-     *          @OA\Schema(
-     *              type="string",
-     *          )
-     *      ),
-     *      security={{"passport_token_ready":{},"passport":{}}}
+     *     path="/api/user/logout",
+     *     tags={"User"},
+     *     summary="Log out & destroy self token",
+     *     operationId="logout",
+     *     @OA\Response(
+     *         response=400,
+     *         description="Invalid input",
+     *         @OA\JsonContent()
+     *     ),
+     *     @OA\Response(
+     *         response=201,
+     *         description="Successful",
+     *         @OA\JsonContent()
+     *     ),
+     *     @OA\Parameter(
+     *         name="email",
+     *         in="path",
+     *         description="User Email",
+     *         required=true,
+     *         @OA\Schema(
+     *             type="string",
+     *         )
+     *     ),
+     *     security={{"passport_token_ready":{},"passport":{}}}
      * )
      */
     public function logout(Request $request)
@@ -155,8 +155,8 @@ class AuthController extends Controller
             $token = $request->user()->token();
             $token->revoke();
             return response()->json(array('message' => 'You have been successfully logged out!'), 200);
-        } catch (\Exception $exception) {
-            throw new HttpException(400, "Invalid data: {$exception->getMessage()}");
+        } catch(\Exception $exception) {
+            throw new HttpException (400, "Invalid data: {$exception->getMessage()}");
         }
     }
 }
