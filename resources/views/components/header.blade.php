@@ -6,7 +6,7 @@
                     <div class="top-logo-area">
                         <div class="logo text-md-center">
                             <a href="{{ route('home') }}">
-                                <img src="{{ asset('assets/images/logo/logo.png') }}" alt="logo" style="width:40%">
+                                <img src="{{ asset('assets/images/logo/medical device logo.png') }}" alt="logo" style="width:25%">
                             </a>
                         </div>
                     </div>
@@ -24,7 +24,7 @@
                     </div>
                     <div class="logo_hidden text-start">
                         <a href="{{ route('home') }}">
-                            <img src="{{ asset('assets/images/logo/logo.png') }}" alt="" style="height:40px">
+                            <img src="{{ asset('assets/images/logo/medical device logo.png') }}" alt="" style="height:50px">
                         </a>
                     </div>
                 </div>

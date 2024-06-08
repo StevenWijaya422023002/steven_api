@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
     @yield('additional_css')
     <!-- END: CSS Assets -->
-</head>
+</head> 
 <body class="box-home">
     <div class="page-box">
         @include('components.header')

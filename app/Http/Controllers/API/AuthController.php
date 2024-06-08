@@ -124,7 +124,7 @@ class AuthController extends Controller
     /**
      * @OA\Post(
      *     path="/api/user/logout",
-     *     tags={"User"},
+     *     tags={"user"},
      *     summary="Log out & destroy self token",
      *     operationId="logout",
      *     @OA\Response(

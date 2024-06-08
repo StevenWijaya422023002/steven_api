@@ -156,12 +156,12 @@ class BookController extends Controller
      *          @OA\JsonContent(
      *              ref="#/components/schemas/Book",
      *              example={
-     *                  "title": " 101 Binaraga Natural-Binaraga Sehat Tanpa Obat-Ade Rai",
-     *                  "author": "Ade Rai",
-     *                  "publisher": "libri",
+     *                  "title": "Digital Blood Pressure Monitor",
+     *                  "author": "Medical Equipment",
+     *                  "publisher": "Omron",
      *                  "publication_year": "2011",
-     *                  "cover": "https://images.tokopedia.net/img/cache/500-square/product-1/2020/3/5/95947739/95947739_331a40de-abc2-4416-9234-78ea8dea5b22_688_688.jpg",
-     *                  "description": "101 Strategi Binaraga Sehat Tanpa Obat.",
+     *                  "cover": "https://images.tokopedia.net/img/cache/700/VqbcmM/2022/12/30/1b373b1e-d468-433f-8ebc-405b2122bf8a.jpg",
+     *                  "description": "Automatic blood pressure monitor with Intellisense technology.",
      *                  "price": 62500}
      *          ),
      *      ),
@@ -268,12 +268,12 @@ class BookController extends Controller
      *          @OA\JsonContent(
      *              ref="#/components/schemas/Book",
      *              example={
-     *                 "title": " 101 Binaraga Natural-Binaraga Sehat Tanpa Obat-Ade Rai",
-     *                  "author": "Ade Rai",
-     *                  "publisher": "libri",
+     *                 "title": "Digital Blood Pressure Monitor",
+     *                  "author": "Medical Equipment",
+     *                  "publisher": "Omron",
      *                  "publication_year": "2011",
-     *                  "cover": "https://images.tokopedia.net/img/cache/500-square/product-1/2020/3/5/95947739/95947739_331a40de-abc2-4416-9234-78ea8dea5b22_688_688.jpg",
-     *                  "description": "101 Strategi Binaraga Sehat Tanpa Obat.",
+     *                  "cover": "https://images.tokopedia.net/img/cache/700/VqbcmM/2022/12/30/1b373b1e-d468-433f-8ebc-405b2122bf8a.jpg",
+     *                  "description": "Automatic blood pressure monitor with Intellisense technology.",
      *                  "price": 62500}
      *          ),
      *      ),

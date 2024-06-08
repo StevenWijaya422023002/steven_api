@@ -19,19 +19,20 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="about-us-content_6 text-center">
-                        <h2>W.T.T.W.&nbsp;&nbsp;Store</h2>
+                        <h2>Medical Device;&nbsp;Store</h2>
                         <p>
                             <small>
-                            Whether you're searching for the latest bestsellers, timeless classics, or hidden gems, our carefully 
-                            curated collection has something for everyone. Our passionate staff is dedicated to helping you find the perfect read,
-                            and our cozy, welcoming environment invites you to linger
-                            and explore. Join our community of book lovers and let us help you.
-                            Visit us today and experience the joy of getting lost in a great book &#10084; 
+                            "Welcome to our medical device emporium, where innovation meets care.
+                             Whether you're seeking cutting-edge technology, reliable essentials, or 
+                             specialized solutions, our handpicked selection caters to all. Our 
+                             dedicated team is here to guide you every step of the way, ensuring 
+                             you find the perfect fit for your needs. Step into our world of health
+                              and wellness today and discover the power of precision, compassion, 
+                              and innovation. Let's embark on this journey together towards better
+                               health and brighter tomorrows! 🌟" &#10084; 
                             </small>
                         </p>
-                        <p class="mt-5">Find your window to the world! Or, even,
-                            <span class="text-color-primary">unlock hidden worlds, one page at a time!</span>
-                        </p>
+                        
                     </div>
                 </div>
             </div>
@@ -44,7 +45,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="banner-video-box">
-                        <img src="https://www.magd.ox.ac.uk/wp-content/uploads/2022/07/3027-052-2000x1000.jpg" alt="">
+                        <img src="https://thehospitallocation.co.uk/wp-content/uploads/2022/10/005-OR-1365x1024.jpg" alt="">
                         <div class="video-icon">
                             <a href="https://youtu.be/VFG0OmbPZSs?si=1_iQVdYVti7IEqsf" class="popup-youtube">
                                 <i class="linear-ic-play"></i>

@@ -62,23 +62,11 @@
                     <div class="product-filter">
                         <h6 class="mb-20">Tags</h6>
                         <div class="blog-tagc loud">
-                            <a href="#" class="selected">Book</a>
-                            <a href="#">EBook</a>
-                            <a href="#">Best Seller</a>
-                            <a href="#">Fiction</a>
+                            <a href="#" class="selected">Medical Equipment</a>
+                            <a href="#">Healthcare Devices</a>
+                            <a href="#">Medical Technology</a>
                             <a href="#">Education</a>
-                            <a href="#">Literature</a>
-                            <a href="#">Classics</a>
-                            <a href="#">Real Event</a>
-                            <a href="#">Young Adult</a>
-                            <a href="#">Religion</a>
-                            <a href="#">Health</a>
-                            <a href="#">Comic</a>
-                            <a href="#">Horror</a>
-                            <a href="#">Filmed</a>
-                            <a href="#">Encyclopedia</a>
-                            <a href="#">In English</a>
-                            <a href="#">In Indonesia</a>
+                            
                         </div>
                     </div>
                 </div>
