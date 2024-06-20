@@ -15,6 +15,10 @@ function randomIntFromInterval(min, max) { // min and max included
 }
 
 function breakWord(text){
+    if (!text) {
+        return ''; // Mengembalikan string kosong jika text kosong atau tidak terdefinisi
+    }
+
     let array = text.split(' ');
     let len = 2;
 
@@ -22,11 +26,13 @@ function breakWord(text){
     for(var i=0;i<array.length;i++) {
         newtext +=array[i]+' ';
         if (i % len == 0) {
-            newtext += '</br>';//or \n\r
+            newtext += '</br>';
         }
     }
     return newtext;
 }
+
+
 
 function getCookie (name) {
 	let value = `; ${document.cookie}`;

@@ -52,17 +52,15 @@ class AuthController extends Controller
             if ($validator->fails()) {
                 throw new HttpException(400, $validator->messages()->first());
             }
-
             $request['password'] = Hash::make($request['password']);
             $request['remember_token'] = \Illuminate\Support\Str::random(10);
             $user = User::create($request->toArray());
             $token = $user->createToken('All Yours')->accessToken;
-
             return response()->json(
                 array('name' => $request->name, 'email' => $request->get('email'), 'token' => $token),
-                201
+                200 
             );
-        } catch (\Exception $exception) {
+        } catch(\Exception $exception) {
             throw new HttpException(400, "Invalid data: {$exception->getMessage()}");
         }
     }

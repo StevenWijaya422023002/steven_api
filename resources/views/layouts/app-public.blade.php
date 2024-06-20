@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="Find your window to the world!">
-    <meta name="keywords" content="ecommerce, book">
-    <meta name="author" content="NIM-NAME">
+    <meta name="keywords" content="ecommerce, medic">
+    <meta name="author" content="422023002-STEVEN WIJAYA">
 
     <title>@yield('title') | 422023002-STEVEN WIJAYA</title>
-    <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/favicon.ico') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/icons/medical device logo.png') }}">
+    
     <!-- BEGIN: CSS Assets -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendor/bootstrap.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendor/linearicons.min.css') }}">

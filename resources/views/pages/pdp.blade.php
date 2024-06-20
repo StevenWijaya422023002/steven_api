@@ -11,7 +11,7 @@
                     <!-- Product Details Left -->
                     <div class="product-details-left">
                         <div class="product-details-images-2 slider-lg-image-2">
-
+                        
                             <div class="easyzoom-style">
                                 <div class="easyzoom easyzoom--overlay">
                                     <a href="{{asset('assets/images/product/single-product-01.webp')}}" class="poppu-img product-img-main-href">
@@ -81,16 +81,16 @@
 
                         <div class="product_meta mt-30">
                             <div class="posted_in item_meta">
-                                <span class="label">Author: </span>
+                                <span class="label">Category: </span>
                                 <span id="product-author" class="text-color-primary"></span>
                             </div>
                             <div class="tagged_as item_meta">
-                                <span class="label">Publisher: </span>
+                                <span class="label">Brand: </span>
                                 <span id="product-publisher"></span>
                             </div>
                             <div class="tagged_as item_meta">
                                 <span class="label">Tag: </span>
-                                <span id="product-tag"></span>
+                                <span id="product-tags"></span>
                             </div>
                         </div>
 
@@ -128,4 +128,4 @@
 @endsection
 @section('addition_script')
     <script src="{{asset('pages/js/pdp.js')}}"></script>
-@endsection
+@endsection 

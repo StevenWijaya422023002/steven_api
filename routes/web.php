@@ -1,16 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BookController;
+use App\Http\Controllers\MedicalController;
 
 Route::get('/', function () {
     return view('pages.home');
 })->name('home');
 
-Route::get('/book', function () {
+Route::get('/medic', function () {
     return view('pages.plp');
 })->name('plp');
 
-Route::get('/book/{i}', function () {
+Route::get('/medic/{i}', function () {
     return view('pages.pdp');
 })->name('pdp');

@@ -49,7 +49,7 @@
             <div class="row align-items-center">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6 order-md-1 order-2">
-                        <span class="copyright-text text-center text-md-start">&copy; 2024 WTTW. <a href="https://hasthemes.com/" target="_blank">All Rights Reserved.</a>
+                        <span class="copyright-text text-center text-md-start">&copy; 2024 Medical Device Seller. <a href="https://hasthemes.com/" target="_blank">All Rights Reserved.</a>
                         </span>
                     </div>
 

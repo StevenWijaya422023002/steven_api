@@ -18,13 +18,13 @@
                     <div class="header-right-items content_hidden d-none d-md-block">
                         <span class="phone-number font-lg-p" title="Call us for fast delivery"> 
                             <a href="#cfd">
-                                <i class="icon-telephone"></i>&nbsp;&nbsp;<small class="text-color-primary"><b>+(62) 85212345678</b></small>
+                                <i class="icon-telephone"></i>&nbsp;&nbsp;<small class="text-color-primary"><b>+(62) 85214134578</b></small>
                             </a>
                         </span>
                     </div>
                     <div class="logo_hidden text-start">
                         <a href="{{ route('home') }}">
-                            <img src="{{ asset('assets/images/logo/medical device logo.png') }}" alt="" style="height:50px">
+                            <!-- <img src="{{ asset('assets/images/logo/medical device logo.png') }}" alt="" style="height:50px"> -->
                         </a>
                     </div>
                 </div>

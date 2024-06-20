@@ -1,8 +1,8 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "My Rest Api",
-        "description": "Laravel project to practice developing Rest API with L5 Swagger OpenApi",
+        "title": "Medical Device Seller",
+        "description": "Buy Everything in here",
         "contact": {
             "name": "Steven Wijaya",
             "email": "steven.422023002@civitas.ukrida.ac.id"
@@ -139,10 +139,10 @@
                 ]
             }
         },
-        "/api/book": {
+        "/api/medic": {
             "get": {
                 "tags": [
-                    "book"
+                    "Medic"
                 ],
                 "summary": "Display a listing of items",
                 "operationId": "index",
@@ -179,9 +179,9 @@
                         }
                     },
                     {
-                        "name": "_publisher",
+                        "name": "_brand",
                         "in": "query",
-                        "description": "search by publisher like name",
+                        "description": "search by brand",
                         "required": false,
                         "schema": {
                             "type": "string"
@@ -211,7 +211,7 @@
             },
             "post": {
                 "tags": [
-                    "book"
+                    "Medic"
                 ],
                 "summary": "Store a newly created item",
                 "operationId": "store",
@@ -221,16 +221,16 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "#/components/schemas/Book"
+                                "$ref": "#/components/schemas/Medic"
                             },
                             "example": {
-                                "title": "Digital Blood Pressure Monitor",
-                                "author": "Medical Equipment",
-                                "publisher": "Omron",
-                                "publication_year": "2011",
-                                "cover": "https://images.tokopedia.net/img/cache/700/VqbcmM/2022/12/30/1b373b1e-d468-433f-8ebc-405b2122bf8a.jpg",
-                                "description": "Automatic blood pressure monitor with Intellisense technology.",
-                                "price": 62500
+                                "equipment_name": "EVIS EXERA III - ENDOSCOPY SET",
+                                "category": "Medical Equipment",
+                                "brand": "no brand",
+                                "publication_year": "2015",
+                                "cover": "https://e-katalog.lkpp.go.id/katalog/produk/download/gambar/14184591?file_name=21011975466437655.jpeg&v=3&file_sub_location=produk_gambar%2F2020%2F12%2F21",
+                                "description": "Pemeriksaan atau tindakan terapi kedalam lambung dengan menggunakan peralatan berupa teropong. Ini adalah satu set alat endoskopi seri Exera siap pakai.",
+                                "price": 166206500000
                             }
                         }
                     }
@@ -261,10 +261,10 @@
                 ]
             }
         },
-        "/api/book/{id}": {
+        "/api/medic/{id}": {
             "get": {
                 "tags": [
-                    "book"
+                    "Medic"
                 ],
                 "summary": "Display the specified item",
                 "operationId": "show",
@@ -309,7 +309,7 @@
             },
             "put": {
                 "tags": [
-                    "book"
+                    "Medic"
                 ],
                 "summary": "Update the specified item",
                 "operationId": "update",
@@ -331,16 +331,16 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "#/components/schemas/Book"
+                                "$ref": "#/components/schemas/Medic"
                             },
                             "example": {
-                                "title": "Digital Blood Pressure Monitor",
-                                "author": "Medical Equipment",
-                                "publisher": "Omron",
-                                "publication_year": "2011",
-                                "cover": "https://images.tokopedia.net/img/cache/700/VqbcmM/2022/12/30/1b373b1e-d468-433f-8ebc-405b2122bf8a.jpg",
-                                "description": "Automatic blood pressure monitor with Intellisense technology.",
-                                "price": 62500
+                                "equipment_name": "EVIS EXERA III - ENDOSCOPY SET",
+                                "category": "Medical Equipment",
+                                "brand": "no brand",
+                                "publication_year": "2015",
+                                "cover": "https://e-katalog.lkpp.go.id/katalog/produk/download/gambar/14184591?file_name=21011975466437655.jpeg&v=3&file_sub_location=produk_gambar%2F2020%2F12%2F21",
+                                "description": "Pemeriksaan atau tindakan terapi kedalam lambung dengan menggunakan peralatan berupa teropong. Ini adalah satu set alat endoskopi seri Exera siap pakai.",
+                                "price": 166206500000
                             }
                         }
                     }
@@ -380,7 +380,7 @@
             },
             "delete": {
                 "tags": [
-                    "book"
+                    "Medic"
                 ],
                 "summary": "Remove the specified item",
                 "operationId": "destroy",
@@ -433,15 +433,15 @@
     },
     "components": {
         "schemas": {
-            "Book": {
-                "title": "Book model",
-                "description": "Book model",
+            "Medic": {
+                "title": "Medical",
+                "description": "Medical",
                 "required": [
-                    "title",
-                    "author"
+                    "equipment_name",
+                    "category"
                 ],
                 "xml": {
-                    "name": "Book"
+                    "name": "Medic"
                 }
             }
         },
